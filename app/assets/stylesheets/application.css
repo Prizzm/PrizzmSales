@@ -1,0 +1,88 @@
+/*
+ * This is a manifest file that'll automatically include all the stylesheets available in this directory
+ * and any sub-directories. You're free to add application-wide styles to this file and they'll appear at
+ * the top of the compiled file, but it's generally better to create a new file per style scope.
+ *= require_self
+ *= require_tree . 
+*/
+
+
+* {margin:0; padding:0}
+/* --- Page Structure  --- */
+html {height:100%}
+body {
+  min-width:400px;
+  width:100%;
+  height:101%;
+  background:#fff;
+  color:#333;
+  font:76%/1.6 verdana,geneva,lucida,'lucida grande',arial,helvetica,sans-serif;
+  text-align:center
+}
+#wrapper{
+  margin:0 auto;
+  padding:15px 15%;
+  text-align:left
+}
+#content {
+  max-width:70em;
+  width:100%;
+  margin:0 auto;
+  padding-bottom:20px;
+  overflow:hidden
+}
+.demo {
+  margin:0;
+  padding:1.5em 1.5em 0.75em;
+  /*border:1px solid #ccc;*/
+  position:relative;
+  overflow:hidden
+}
+.collapse p {padding:0 10px 1em}
+.top{font-size:.9em; text-align:right}
+#switch, .switch {margin-bottom:5px; text-align:right}
+
+/* --- Headings  --- */
+h1 {
+  margin-bottom:.75em; 
+  font-family:georgia,'times new roman',times,serif; 
+  font-size:2.5em; 
+  font-weight:normal; 
+  color:#c30
+}
+h2{font-size:1.5em;}
+
+.expand{padding-bottom:.75em}
+
+/* --- Links  --- */
+a:link, a:visited {
+  /*border:1px dotted #ccc;*/
+  border-width:0 0 1px;
+  text-decoration:none;
+  color:blue
+}
+a:hover, a:active, a:focus {
+  border-style:solid;
+  background-color:#f0f0f0;
+  outline:0 none
+}
+a:active, a:focus {
+  color:red;
+}
+.expand a {
+  display:block;
+  padding:3px 10px
+}
+.expand a:link, .expand a:visited {
+  border-width:1px;
+  background-image:url(/images/arrow-down.gif);
+  background-repeat:no-repeat;
+  background-position:98% 50%;
+}
+.expand a:hover, .expand a:active, .expand a:focus {
+  text-decoration:underline
+}
+.expand a.open:link, .expand a.open:visited {
+  border-style:solid;
+  background:#eee url(/images/arrow-up.gif) no-repeat 98% 50%
+}
