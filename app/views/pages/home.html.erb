@@ -1,9 +1,107 @@
+<style>
+
+
+/* Boxes */
+
+.boxes {
+    height:150px;
+}
+.box {
+    position:relative;
+    float:left;
+    padding:20px 30px 20px;
+    width:206px;
+    height:185px;
+    background:#fff;
+    text-align:center;
+    border-radius:10px;
+	border: 1px solid #ddd;
+	color:#333;
+  	font:12px/1.6 verdana,geneva,lucida,'lucida grande',arial,helvetica,sans-serif;
+}
+.box .bkg {
+    display:block;
+    position:absolute;
+    top:20px;
+
+    left:95px;
+    width:85px;
+
+    height:100px;
+}
+
+.box img{
+	width:30px;
+}
+
+
+.box + .box {
+    margin-left:20px;
+}
+
+.box p { 
+    text-align:left;
+    margin-left:10px;
+}
+.box h2 {
+	margin-bottom:10px;
+}
+</style>
+
+
     <div id="wrapper"> 
       <div id="content">  
 	
 	
-		<h1>Why does Bryna use Prizzm??</h1>
-		  <h2>To support customers! This is your electronic warrantee info for a Herman Mini.</h2>
+		<div id="logo"><img src="images/prizzm.png"/></div>
+		
+		
+		<div id="highlight">
+			<h1>Why does Bryna use Prizzm?</h1>
+			<h2>To support customers! This is your electronic warrantee info for a Herman Mini.</h2>
+			
+			<div class="signup" id="signup">
+
+			    <form action="/betas" method="post" accept-charset="utf-8" id="beta_form">
+			      <input type="text" name="email" placeholder="mail@company.com" value="" id="email">
+			      <input type="submit" id="submit" value="Notify me!" ,="" class="button rosy">
+			    </form> 
+			</div>
+			
+		</div> 
+		
+		
+		
+			<div class="boxes">
+				
+				<h3>Why <img src="images/prizzm.png"/> ?</h3>
+				
+				<div class="box">
+					<img src="images/credit-card.png">
+					
+					<h2>Save</h2>
+					<span class="bkg"></span>
+					<p>You just supported Bryna by telling us what you think! So you are going to get a you a  discount on products with prizzm - and even give discounts to friends. </p>
+				</div>
+				<div class="box">
+					<img src="images/suitcase.png">
+					
+					<h2>Store</h2>
+					<span class="bkg"></span>
+					<p>You wrote a awesome review! Prizzm allows you to save it, access it later, and find others who have similar interests.</p>
+				</div>
+				<div class="box">
+					<img src="images/share.png">
+					
+					<h2>Share</h2>
+					<span class="bkg"></span>
+					<p>You can use Prizzm to share reviews, or keep them private. Have a problem with your <herman mini> - or even another company - Prizzm  allows you to express yourself, and connect to others with the same products.</p>
+				</div>
+			</div>
+		
+		
+		
+		
           <div class="demo">
             <h2 class="expand">How can you use Prizzm?</h2>
             <div class="collapse">
@@ -34,6 +132,6 @@
                 <p>send via email</p>
                 <p class="top"><a href="#content">Top of page</a></p>
             </div>
-          </div>
+          </div> 
         </div>
     </div>
