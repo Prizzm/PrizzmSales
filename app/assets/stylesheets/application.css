@@ -73,13 +73,13 @@ a:active, a:focus {
 /* Header*/
 
 #logo{
-	width:350px;
+	/* width:350px; */
 	margin: 0 auto;
 	padding: 30px 0;
 }
 
 #logo img{
-	width:400px;
+/*	width:400px; */
 }
 
 /* Highlight */
@@ -101,7 +101,7 @@ a:active, a:focus {
 /* Signup */
 
 .signup{
-    width:550px;
+    width:500px;
     margin:0 auto;
     height:95px;
 }
@@ -121,7 +121,7 @@ a:active, a:focus {
 }
 
 .signup form{
-    width:405px;
+    width:505px;
     margin:0 auto;
 }
 
