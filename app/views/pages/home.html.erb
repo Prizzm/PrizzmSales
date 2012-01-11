@@ -1,143 +1,81 @@
-<style>
-
-
-/* Boxes */
-
-.boxes {
-    height:150px;
-}
-.box {
-    position:relative;
-    float:left;
-    padding:20px 30px 20px;
-    width:185px;
-    height:185px;
-    background:#fff;
-    text-align:center;
-    border-radius:10px;
-	border: 1px solid #ddd;
-	color:#333;
-  	font:12px/1.6 verdana,geneva,lucida,'lucida grande',arial,helvetica,sans-serif;
-}
-.box .bkg {
-    display:block;
-    position:absolute;
-    top:20px;
-
-    left:95px;
-    width:85px;
-
-    height:100px;
-}
-
-.box img{
-	width:30px;
-}
-
-
-.box + .box {
-    margin-left:20px;
-}
-
-.box p { 
-    text-align:left;
-    margin-left:10px;
-}
-.box h2 {
-	margin-bottom:10px;
-}
-</style>
-
-
-    <div id="wrapper"> 
-      <div id="content">  
-	
-	
-		<div id="logo"><img src="images/logo.png"/></div>
-
-		
-			<div id="highlight">
-				<h1>Happy customers are the best advertisers.</h1>
-				<h2>Get more customer recommendations with Prizzm</h2>
-				<div class="signup" id="signup">
-				    <form action="/betas" method="post" accept-charset="utf-8" id="beta_form">
-				      <input type="text" name="email" placeholder="mail@company.com" value="" id="email">
-				      <input type="submit" id="submit" value="Sign up!" ,="" class="button rosy">
-				    </form> 
-				</div>
-			</div>
-		
-		
-		
-			<div class="boxes">
-
-				
-				<div class="box">
-					<img src="images/credit-card.png">
-					
-					<h2>1. Setup</h2>
-					<span class="bkg"></span>
-					<p>It’s a snap: add your website, logo, Facebook page.  Automate requests for recommendations with every sale.
-					 </p>
-				</div>
-				<div class="box">
-					<img src="images/suitcase.png">
-					
-					<h2>2. Ask </h2>
-					<span class="bkg"></span>
-					<p>Your customers are talking - listen! Prizzm makes feedback painless and rewarding.</p>
-				</div>
-				<div class="box">
-					<img src="images/share.png">
-					
-					<h2>3. Share</h2>
-					<span class="bkg"></span>
-						<b>90%</b> of people trust friends recommendations.<br>
-						<b>10x</b> the response of most surveys with Prizzm!
-						</p>
-				</div>
-			</div>	
-		
-		
-
-			
-		
-        
+<div id="blackbar"></div>
+  
+  <div id="container">
+    <header class="clearfix">
+      <h1 id="logo"><a href="/"></a></h1>
+      <nav>
+        <ul>
+          <li><a class="about" href="http://blog.prizzm.com/pages/about" target="_blank">About us</a></li>
+          <li><a class="contact" href="">Contact us</a></li>
+          <li><a class="fb" href="https://www.facebook.com/pages/Prizzm/242295735811106" target="_blank">facebook</a></li>
+          <li><a class="tt" href="https://twitter.com/#!/prizzmtwt" target="_blank">twitter</a></li>
+        </ul>
+      </nav>
+    </header>
+    
+    <div id="main">
+      <h1>Happy Customers are the best advertisers.</h1>
+      
+      <div id="ribbon">
+        <h2>Get more customer recommendations with Prizzm</h2>
+        <form action="">
+          <input type="email" name="email" placeholder="Company email" />
+          <input type="text" name="name" placeholder="Company name" />
+          <input type="submit" value="Sign up!" />
+        </form>
+      </div>
+      
+      <section id="info">
+        <nav class="clearfix">
+          <ul>
+            <li id="why" class="active"><a href="">Why Prizzm?</a><span></span></li>
+            <li id="increase"><a href="">Increasing Response Rates</a><span></span></li>
+            <li id="engineer"><a href="">Engineered For Business</a><span></span></li>
+            <li id="costs"><a href="">Are There Costs?</a><span></span></li>
+          </ul>
+        </nav>
+        <div class="content why show">
+        Prizzm rewards your customers for feedback that they give you. You can simply ask if they recommend a product they have bought or your company. Happy customers are the best advertisers, after all!
         </div>
+        <div class="content increase">
+        Customers are sick of long surveys and feedback requests that they get nothing out of, so they ignore them. Prizzm fixes that - it rewards customers for giving feedback. It is extremely fast for the customers, they get something out of it, so we have a high response rate.
+        </div>
+        <div class="content engineer">
+          <ol>
+            <li>Create your brand page for advertising, add unlimited products.</li>
+            <li>Integration with Facebook and Twitter - promote good feedback.</li>
+            <li>Integration with your sales system: give us your sales list and watch the feedback come in!</li>
+            <li>Topics: Ask your customers anything, and find out what they have to say.</li>
+            <li>Sales! Customers on Prizzm rack up points.. they can redeem them for a sale. Increase sales directly with Prizzm by sponsoring deals! </li>
+          </ol>
+        </div>
+        <div class="content costs">
+        If your brand qualifies, you can receive the Prizzm recommendation service for free. Prizzm costs would only be incurred when you receive a sale on a deal offered to the Prizzm user base.
+        </div>
+      </section>
+      
+      <section class="clearfix">
+        <article class="setup icon">
+          <h3>1. Setup</h3>
+          It’s a snap: add your website, logo, Facebook page. Automate requests for recommendations with every sale.
+        </article>
+        <article class="ask icon">
+          <h3>2. Ask</h3>
+          Your customers are talking - listen! Prizzm makes feedback painless and rewarding.
+        </article>
+        <article class="share icon">
+          <h3>3. Share</h3>
+          <p><strong>90%</strong> of people trust friends recommendations.</p>
+          <p><strong>10x</strong> the response of most surveys with Prizzm!</p>
+        </article>
+      </section>
+      
     </div>
 
+    <footer>
+      Copyright &copy; 2012 prizzm.com . All rights reserved . <a href="">Terms & Conditions</a> | design by <a href="http://ohsogeoff.com">ohsogeoff.com</a>
+    </footer>
+    
+  </div>
+  
 
-	<div class="demo">
-        <h2 class="expand">Why Prizzm?</h2>
-        <div class="collapse">
-			<p>Prizzm rewards your customers for feedback that they give you.  You can simply ask if they recommend a product they have bought or your company. Happy customers are the best advertisers, after all! </p>
-            <p class="top"><a href="#content">Top of page</a></p>
-        </div>
-
-		<h2 class="expand">Why is the response rate much higher with Prizzm?</h2>
-        <div class="collapse">
-			<p> Customers are sick of loooong surveys and feedback requests that they get nothing out of, so they ignore them. Prizzm fixes that - it rewards customers for giving feedback. It is extremely fast for the customers, they get something out of it, so we have a high response rate.
-			 </p>
-            <p class="top"><a href="#content">Top of page</a></p>
-        </div>
-
-        
-        <h2 class="expand">What features does Prizzm have for businesses? </h2>
-        <div class="collapse">
-            <p>a. Create your brand page for advertising, add unlimited products. <br>
-			b. Integration with Facebook and Twitter - promote good feedback. <br>
-			c. Integration with your sales system: give us your sales list and watch the feedback come in! <br>
-			d. Topics: Ask your customers anything, and find out what they have to say.<br>
-			e. Sales! Customers on Prizzm rack up points.. they can redeem them for a sale. Increase sales directly with Prizzm by sponsoring deals! <br>
-			</p>
-            <p class="top"><a href="#content">Top of page</a></p>
-        </div>
-
-		<h2 class="expand">What does it cost?</h2>
-        <div class="collapse">
-			<p> If your brand qualifies, you can receive the Prizzm recommendation service for free. Prizzm costs would only be incurred when you receive a sale on a deal offered to the Prizzm user base. 
-			 </p>
-            <p class="top"><a href="#content">Top of page</a></p>
-        </div>
-
-      </div>
