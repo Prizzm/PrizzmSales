@@ -18,11 +18,11 @@
       
       <div id="ribbon">
         <h2>Get more customer recommendations with Prizzm</h2>
-        <form action="">
-          <input type="email" name="email" placeholder="Company email" />
-          <input type="text" name="name" placeholder="Company name" />
-          <input type="submit" value="Sign up!" />
-        </form>
+        <%= form_for Signup.new do |form| %>
+          <%= form.text_field :email, :placeholder => 'Company email' %>
+          <%= form.text_field :name, :placeholder => 'Company name' %>
+          <%= form.submit "Sign up!" %>
+        <%- end %>
       </div>
       
       <section id="info">
@@ -77,5 +77,3 @@
     </footer>
     
   </div>
-  
-

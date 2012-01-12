@@ -311,6 +311,11 @@ td { vertical-align: top; }
         border-radius: 3px;
       }
       
+      form input[type=text]:focus, form input[type=email]:focus
+      {
+        color: #333;
+      }
+      
       form input[type=submit]{
         padding: 9px 20px;
         color: #fff;
@@ -421,6 +426,29 @@ td { vertical-align: top; }
   
   .show {
     display: block;
+  }
+  
+  #thanks
+  {
+    width: 500px;
+    margin: 100px auto;
+    padding: 20px;
+    background: #fff;
+    border: 1px solid #cbcbcb;
+    box-shadow: 0 0 5px 0 #cbcbcb;
+    position: relative;
+    text-align: center;
+    
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  
+  #thanks h1
+  {
+    font-weight: normal;
+    font-size: 2.5em;
+    color: #c30c30;
+    font-family: "ChaparralProRegular";
   }
 
 @font-face {
