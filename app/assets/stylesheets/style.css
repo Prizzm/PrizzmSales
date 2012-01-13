@@ -397,6 +397,10 @@ td { vertical-align: top; }
       float: left;
     }
     
+      article h3 {
+        margin: 0;
+      }
+    
       article.icon {
         padding-left: 42px;
       }
