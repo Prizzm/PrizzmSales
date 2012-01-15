@@ -4,11 +4,11 @@
     <header class="clearfix">
       <h1 id="logo"><a href="/"></a></h1>
       <nav>
-
         <ul>
           <li><a class="about" href="http://blog.prizzm.com/pages/about" target="_blank">About us</a></li>
-          <li><a class="contact" href="">Contact us</a></li>
-         <!-- <li><a class="fb" href="https://www.facebook.com/pages/Prizzm/242295735811106" target="_blank">facebook</a></li>  
+          <li><a class="contact" href="mailto:contact@prizzm.com">Contact us</a></li>
+		 
+		<!-- <li><a class="fb" href="https://www.facebook.com/pages/Prizzm/242295735811106" target="_blank">facebook</a></li>  
           <li><a class="tt" href="https://twitter.com/#!/prizzmtwt" target="_blank">twitter</a></li>  twitter-share-button -->
 		 <li><a href='https://twitter.com/share'
 		            class='twitter-share-button'
@@ -18,17 +18,18 @@
 		            data-hashtags='prizzm'>Tweet</a><script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script></li>
 		
 		  <li> <script src="http://connect.facebook.net/en_US/all.js#xfbml=1"></script><fb:like href="" layout="button_count" show_faces="false" width="450" font=""></fb:like></li>
-
+		 
 		
         </ul>
       </nav>
     </header>
     
     <div id="main">
-      <h1>Get more customer recommendations with Prizzm!</h1>
+	 <h1>Get more customer recommendations with Prizzm! </h1>
+	
       
       <div id="ribbon">
-        <h2>Get on the Beta list! Launching soon.</h2>
+        <h2>Get on the Beta list! Launching soon.  <a href="http://www.prizzm.com">Not a business?</a></h2>
         <%= form_for Signup.new do |form| %>
           <%= form.text_field :email, :placeholder => 'Company email' %>
           <%= form.text_field :name, :placeholder => 'Company name' %>
