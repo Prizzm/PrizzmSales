@@ -397,20 +397,24 @@ td { vertical-align: top; }
       float: left;
     }
     
+      article h3 {
+        margin: 0;
+      }
+    
       article.icon {
         padding-left: 42px;
       }
       
         article.setup.icon{
-          background: no-repeat url("../images/setup.png") 0 13px;
+          background: no-repeat url("../images/setup.png") 0 0;
         }
         
         article.ask.icon{
-          background: no-repeat url("../images/ask.png") 0 13px;
+          background: no-repeat url("../images/ask.png") 0 0;
         }
         
         article.share.icon{
-          background: no-repeat url("../images/share.png") 0 13px;
+          background: no-repeat url("../images/share.png") 0 0;
         }
   
   footer {
