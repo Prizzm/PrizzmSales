@@ -218,7 +218,7 @@ td { vertical-align: top; }
   }
   
   iframe {
-    width: 76px;
+    width: 76px !important;
   }
   
   #blackbar {
