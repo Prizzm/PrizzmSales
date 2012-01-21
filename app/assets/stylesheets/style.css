@@ -243,18 +243,18 @@ td { vertical-align: top; }
       background: no-repeat url("../images/logo.png");
     }
     
-    header nav {
+    #main_nav {
       margin: 10px 0 0;
       width: 202px;
       float: right;
     }
     
-      header nav li {
+      #main_nav li {
         margin: 0 0 10px 20px;
         float: left;
       }
       
-      header nav li a {
+      #main_nav li a {
         height: 18px;
         font-size: 0.8em;
         font-weight: bold;
@@ -264,10 +264,10 @@ td { vertical-align: top; }
         text-decoration: none;
       }
       
-      header nav li a.about { color: #4e8ae4; padding-left: 22px; background-position: 0 0; height: 17px; } 
-      header nav li a.contact { color: #e44e4e; padding-left: 26px; background-position: 0 -27px; height: 18px; } 
-      header nav li a.fb { color: #5775ae; padding-left: 21px; background-position: 0 -55px; height: 16px; } 
-      header nav li a.tt { color: #3986bb; padding-left: 21px; background-position: 0 -81px; height: 16px; } 
+      #main_nav li a.about { color: #4e8ae4; padding-left: 22px; background-position: 0 0; height: 17px; } 
+      #main_nav li a.contact { color: #e44e4e; padding-left: 26px; background-position: 0 -27px; height: 18px; } 
+      #main_nav li a.fb { color: #5775ae; padding-left: 21px; background-position: 0 -55px; height: 16px; } 
+      #main_nav li a.tt { color: #3986bb; padding-left: 21px; background-position: 0 -81px; height: 16px; } 
 
   
   #main {
@@ -352,34 +352,34 @@ td { vertical-align: top; }
       border-bottom: 1px solid #d3d1d1;
     }
       
-      section nav li{
+      #sub_nav li{
         float: left;
         border-right: 1px solid #fff;
       }
         
-        section nav li a{
+        #sub_nav li a{
           background: #d3d1d1;
         }
         
-        section nav li.active a{
+        #sub_nav li.active a{
           background: #f1b764;
         }
         
-        section nav li.active a {
+        #sub_nav li.active a {
           color: #fff;
         }
         
-        section nav li span {
+        #sub_nav li span {
           height: 7px;
           background: no-repeat url("../images/arrow.png") center;
           display: none;
         }
         
-        section nav li.active span {
+        #sub_nav li.active span {
           display: block;
         }
       
-      section nav li a {
+      #sub_nav li a {
         padding: 8px;
         color: #545454;
         text-decoration: none;
