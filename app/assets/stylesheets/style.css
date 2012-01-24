@@ -421,13 +421,13 @@ td { vertical-align: top; }
           background: no-repeat url("../images/share.png") 0 0;
         }
   
-  footer {
+  #footer {
     margin: 10px 0 0;
     font-size: 0.8em;
     text-align: center;
   }
   
-    footer a {
+    #footer a {
       color: #4e8ae4;
       text-decoration: none;
     }
