@@ -471,6 +471,14 @@ td { vertical-align: top; }
 
 }
 
+.ie7 #main{
+  margin-top: 80px;
+}
+
+.ie7 #subnav {
+  display: none;
+}
+
 /* ==|== non-semantic helper classes ========================================
    Please define your styles before this section.
    ========================================================================== */
