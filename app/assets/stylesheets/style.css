@@ -479,6 +479,10 @@ td { vertical-align: top; }
   display: none;
 }
 
+.ie7 #main h1 {
+  margin-bottom: 150px;
+}
+
 /* ==|== non-semantic helper classes ========================================
    Please define your styles before this section.
    ========================================================================== */
