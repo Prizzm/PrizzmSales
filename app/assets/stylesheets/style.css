@@ -483,6 +483,14 @@ td { vertical-align: top; }
   margin-bottom: 150px;
 }
 
+.ie7 section h3 {
+  margin-bottom: 0;
+}
+
+.ie7 #steps {
+  margin-top: 50px;
+}
+
 /* ==|== non-semantic helper classes ========================================
    Please define your styles before this section.
    ========================================================================== */
