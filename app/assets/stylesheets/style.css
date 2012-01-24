@@ -516,7 +516,7 @@ td { vertical-align: top; }
 .clearfix:after { clear: both; }
 .clearfix { zoom: 1; }
 
-
+.clear { clear: both; }
 
 /* ==|== media queries ======================================================
    PLACEHOLDER Media Queries for Responsive Design.
