@@ -396,28 +396,28 @@ td { vertical-align: top; }
         margin: 0;
       }
     
-    article {
+    .col {
       width: 27%;
       float: left;
     }
     
-      article h3 {
+      .col h3 {
         margin: 0;
       }
     
-      article.icon {
+      .icon {
         padding-left: 42px;
       }
       
-        article.setup.icon{
+        .setup.icon{
           background: no-repeat url("../images/setup.png") 0 0;
         }
         
-        article.ask.icon{
+        .ask.icon{
           background: no-repeat url("../images/ask.png") 0 0;
         }
         
-        article.share.icon{
+        .share.icon{
           background: no-repeat url("../images/share.png") 0 0;
         }
   
