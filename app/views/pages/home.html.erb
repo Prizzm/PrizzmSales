@@ -1,104 +1,110 @@
-<div id="blackbar"></div>
+<header class="navbar navbar-fixed-top"><div class="container"><div class="row"><div class="span12">
+	<a href="/"><h1 id="logo" class="ir">Prizzm rewarding customers</h1></a>
 
-  <div id="container">
-    <header class="clearfix">
-      <h1 id="logo"><a href="/"></a></h1>
-      <nav>
-        <ul id="main_nav" class="clearfix">
-          <li><a class="about" href="http://blog.prizzm.com/pages/about" target="_blank">About us</a></li>
-          <li><a class="contact" href="mailto:contact@prizzm.com">Contact us</a></li>
+	<nav><ul>
+		<li id="signin"><a href="">Sign in<span>with an existing account</span></a></li>
+		<li id="about"><a href="">About<span>our company</span></a></li>
+	</ul></nav>
 
-		<!-- <li><a class="fb" href="https://www.facebook.com/pages/Prizzm/242295735811106" target="_blank">facebook</a></li>
-          <li><a class="tt" href="https://twitter.com/#!/prizzmtwt" target="_blank">twitter</a></li>  twitter-share-button -->
-		 <li><a href='https://twitter.com/share'
-		            class='twitter-share-button'
-		            data-url='http://sales.prizzm.com'
-		            data-related='prizzmtwt'
-		            data-text='Get more customer recommendations for your business!'
-		            data-hashtags='prizzm'>Tweet</a><script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script></li>
+	<ul id="social">
 
-		  <li> <script src="http://connect.facebook.net/en_US/all.js#xfbml=1"></script><fb:like href="" layout="button_count" show_faces="false" width="450" font=""></fb:like></li>
+	</ul>
 
+</div></div></div></header>
 
-        </ul>
-      </nav>
-    </header>
+<div id="main"><div class="container">
 
-    <div id="main">
-	 <h1>Get more customer recommendations with Prizzm! </h1>
+	<section id="customers" class="row">
 
+	<div class="span9">
+		<h2>Got customers?</h2>
+		<h3>Prizzm encourages your customers to share recommendations with their friends on Facebook and Twitter.</h3>
+	</div>
+	<div class="span10 offset1">
+		<section class="fl">
+			<div class="dyk">
+				<i></i>
+				<div class="clearfix"><div class="fl"><strong>You</strong> are </div><em>5x</em> <span>more likely to have <em>your customers</em> publish a recommendation if you <em>use Prizzm</em>.</span></div>
+			</div>
 
-      <div id="ribbon">
-        <h2>Get on the Beta list! Launching soon.  </h2>
-        <%= form_for Signup.new do |form| %>
-          <%= form.text_field :email, :placeholder => 'Company email' %>
-          <%= form.text_field :name, :placeholder => 'Company name' %>
-          <%= form.submit "Notify Me" %>
-        <%- end %>
-      </div>
+			<div id="twitter" class="testimonial" rel="popover" data-content="<a href='http://wishery.com' target='_blank'>Wishery</a> is getting a recommendation from a customer through Prizzm."></div>
 
-      <section id="info">
-        <nav class="clearfix">
-          <ul id="sub_nav" class="clearfix">
-            <li id="why" class="active"><a href="">Why Prizzm?</a><span></span></li>
-            <li id="increase"><a href="">Increasing Response Rates</a><span></span></li>
-            <li id="engineer"><a href="">Features</a><span></span></li>
-            <li id="costs"><a href="">Costs?</a><span></span></li>
-			<li id="people"><a href="">Not a business?</a><span></span></li>
-          </ul>
-        </nav>
-        <div class="content why show">
-        <!--[if IE 7]>    <h3>Why prizzm?</h3> <![endif]-->
-        Prizzm rewards your customers for engagement. Prizzm makes it simple to ask for recommendations and feedback - and you'll never know if you don't ask!
-        </div>
-        <div class="content increase">
-        <!--[if IE 7]>    <h3>Increasing response rates</h3> <![endif]-->
-        Customers are sick of long surveys and feedback requests that they get nothing out of, so they ignore them. Prizzm fixes that - it rewards customers for giving feedback. It is extremely fast for the customers, they get something out of it, so we have a high response rate.
-        </div>
-        <div class="content engineer">
-        <!--[if IE 7]>    <h3>Features</h3> <![endif]-->
-          <ol>
-            <li>Create your brand page for advertising, add unlimited products.</li>
-            <li>Integration with Facebook and Twitter - promote good feedback.</li>
-            <li>Integration with your sales system: give us your sales list and watch the feedback come in!</li>
-            <li>Topics: Ask your customers anything, and find out what they have to say.</li>
-            <li>Sales! Customers on Prizzm rack up points.. they can redeem them for a sale. Increase sales directly with Prizzm by sponsoring deals! </li>
+			<a class="callout next" href="#listen">Find out how</a>
+		</section>
 
-          </ol>
-        </div>
-        <div class="content costs">
-        <!--[if IE 7]>    <h3>Costs?</h3> <![endif]-->
-        Prizzm is free for select brands, but not all companies qualify. Is your brand unique? Sign up!
-        </div>
-        <div class="content people">
-        <!--[if IE 7]>    <h3>Not a business?</h3> <![endif]-->
-        Prizzm is for people too. <a href="http://www.prizzm.com">Sign up here</a> if you are person who would like to record and own your feedback, while getting rewards!
-        </div>
-      </section>
+		<form id="signup" class="fl"><ul>
+			<li><h4>Sign up for Prizzm.</h4></li>
+			<li><input type="text" name="company_name" placeholder="Company name"></li>
+			<li><input type="email" name="email" placeholder="email"></li>
+			<li><input type="password" name="password" placeholder="password"></li>
+		</ul>
+		<input type="button" class="bbtn" value="Sign up">
+	</form>
 
-      <div id="steps" class="clearfix">
-        <div class="col setup icon">
-          <h3>1. Setup</h3>
-          <p>It’s a snap: add your website, logo, Facebook page. Automate requests for recommendations and feedback with every sale.</p>
-        </div>
-        <div class="col ask icon">
-          <h3>2. Ask</h3>
-          <p><strong>90%</strong> of people trust friends recommendations.</p>
-          <p><strong>10x</strong> the response of most surveys with Prizzm!</p>
-        </div>
-        <div class="col share icon">
-          <h3>3. Share</h3>
-    		  <p>Your customers get rewarded for sharing with their friends. Publish customer reviews on Facebook, Twitter, etc.</p>
-        </div>
-        <div class="clear"></div>
-      </div>
-      <div class="clear"></div>
-    </div>
+	</section>
 
-    <div id="footer">
-      Copyright &copy; 2012 prizzm.com . All rights reserved . <a href="">Terms & Conditions</a> | design by <a href="http://ohsogeoff.com">ohsogeoff.com</a>
-    </div>
+	<section id="listen" class="row"><div class="span12">
+		<h2>Listen to them.</h2>
+		<h3>Prizzm response rates are 50% higher than other channels.</h3>
+		<section class="feature clearfix">
+			<span>Prizzm automatically asks for feedback from every sale.<i></i></span>
+			<div id="feedback"></div>
+		</section>
+		<section class="feature clearfix">
+			<span>Simple, elegant forms increase response rates.<i></i></span>
+			<div id="responses"></div>
+		</section>
+		<a class="callout next" href="#more">Why should we listen?</a>
+	</div></section>
 
-  </div>
+	<section id="more" class="row"><div class="span12">
+		<h2>Get more customers.</h2>
+		<div class="row"><section class="span10 offset1">
+			<div id="facebook" class="testimonial fl" rel="popover" data-content="
+			<ul>
+				<li><em>Real</em> customer reviews.</li>
+				<li><em>Real</em> conversations.</li>
+				<li><em>Real value.</em></li>
+			</ul>
+			"></div>
 
+			<section class="abs">
+				<ul class="dyk"><i></i>
+					<li class="clearfix"><span>70%</span><p>trust recommendations from their friends.</p></li>
+					<li class="clearfix"><span>55%</span><p>use social media to talk about products and companies.</p></li>
+					<li class="clearfix"><span>$30</span><p>You could save on average by having customers use Prizzm.</p></li>
+			</section>
+		</section></div>
 
+	</div></section>
+
+</div></div>
+
+<footer>
+	<section id="signup"><div class="container"><div class="row"><div class="span12">
+		<form><ul class="clearfix">
+			<li><input type="text" name="company_name" placeholder="Company name"></li>
+			<li><input type="email" name="email" placeholder="email"></li>
+			<li><input type="password" name="password" placeholder="password"></li>
+			<a href="">Sign up</a>
+		</ul></form>
+
+	</div></div></div></section>
+
+	<section id="bits"><div class="container"><div class="row"><div class="span12">
+		<div id="author" class="fl">Design by <a href="http://ohsogeoff.com">ohsogeoff</a></div>
+		<div id="copyright" class="fr">Copyright &copy; 2012 Prizzm.com</div>
+		<nav class="fr"><ul>
+			<li><a href="">About</a></li>
+			<li><a href="">Privacy</a></li>
+		</ul></nav>
+	</div></div></div></section>
+</footer>
+
+<script type="text/javascript">
+  (function() {
+    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+    po.src = 'https://apis.google.com/js/plusone.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+  })();
+</script>

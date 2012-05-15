@@ -1,18 +1,5 @@
-/* 
- * HTML5 ✰ Boilerplate
- *
- * What follows is the result of much research on cross-browser styling. 
- * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
- * Kroc Camen, and the H5BP dev community and team.
- *
- * Detailed information about this CSS: h5bp.com/css
- * 
- * ==|== normalize ==========================================================
- */
-
-
 /* =============================================================================
-   HTML5 display definitions
+   HTML5 Boilerplate CSS: h5bp.com/css
    ========================================================================== */
 
 article, aside, details, figcaption, figure, footer, header, hgroup, nav, section { display: block; }
@@ -20,533 +7,532 @@ audio, canvas, video { display: inline-block; *display: inline; *zoom: 1; }
 audio:not([controls]) { display: none; }
 [hidden] { display: none; }
 
-/* =============================================================================
-   Base
-   ========================================================================== */
-
-/*
- * 1. Correct text resizing oddly in IE6/7 when body font-size is set using em units
- * 2. Force vertical scrollbar in non-IE
- * 3. Prevent iOS text size adjust on device orientation change, without disabling user zoom: h5bp.com/g
- */
-
-html { font-size: 100%; overflow-y: scroll; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
-
-body { margin: 0; font-size: 13px; line-height: 1.231; }
-
-body, button, input, select, textarea { color: #222; }
-
-/* 
- * Remove text-shadow in selection highlight: h5bp.com/i
- * These selection declarations have to be separate
- * Also: hot pink! (or customize the background color to match your design)
- */
+html { font-size: 100%; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
+html, button, input, select, textarea { font-family: sans-serif; color: #222; }
+body { margin: 0; font-size: 1em; line-height: 1.4; }
 
 ::-moz-selection { background: #fe57a1; color: #fff; text-shadow: none; }
 ::selection { background: #fe57a1; color: #fff; text-shadow: none; }
 
-
-/* =============================================================================
-   Links
-   ========================================================================== */
-
-.container a { color: #fff !important; }
-.container a:visited { color: #fff !important; }
-.container a:hover { color: #ccc !important; }
-.container a:focus { outline: thin dotted; }
-
-/* Improve readability when focused and hovered in all browsers: h5bp.com/h */
+a { color: #00e; }
+a:visited { color: #551a8b; }
+a:hover { color: #06e; }
+a:focus { outline: thin dotted; }
 a:hover, a:active { outline: 0; }
 
-
-/* =============================================================================
-   Typography
-   ========================================================================== */
-
 abbr[title] { border-bottom: 1px dotted; }
-
 b, strong { font-weight: bold; }
-
-blockquote { margin: 1em 20px; }
-
+blockquote { margin: 1em 40px; }
 dfn { font-style: italic; }
-
 hr { display: block; height: 1px; border: 0; border-top: 1px solid #ccc; margin: 1em 0; padding: 0; }
-
 ins { background: #ff9; color: #000; text-decoration: none; }
-
 mark { background: #ff0; color: #000; font-style: italic; font-weight: bold; }
-
-/* Redeclare monospace font family: h5bp.com/j */
-pre, code, kbd, samp { font-family: monospace, monospace; _font-family: 'courier new', monospace; font-size: 1em; }
-
-/* Improve readability of pre-formatted text in all browsers */
+pre, code, kbd, samp { font-family: monospace, serif; _font-family: 'courier new', monospace; font-size: 1em; }
 pre { white-space: pre; white-space: pre-wrap; word-wrap: break-word; }
-
 q { quotes: none; }
 q:before, q:after { content: ""; content: none; }
-
 small { font-size: 85%; }
 
-/* Position subscript and superscript content without affecting line-height: h5bp.com/k */
 sub, sup { font-size: 75%; line-height: 0; position: relative; vertical-align: baseline; }
 sup { top: -0.5em; }
 sub { bottom: -0.25em; }
-
-
-/* =============================================================================
-   Lists
-   ========================================================================== */
 
 ul, ol { margin: 1em 0; padding: 0 0 0 40px; }
 dd { margin: 0 0 0 40px; }
 nav ul, nav ol { list-style: none; list-style-image: none; margin: 0; padding: 0; }
 
-
-/* =============================================================================
-   Embedded content
-   ========================================================================== */
-
-/*
- * 1. Improve image quality when scaled in IE7: h5bp.com/d
- * 2. Remove the gap between images and borders on image containers: h5bp.com/e 
- */
-
 img { border: 0; -ms-interpolation-mode: bicubic; vertical-align: middle; }
-
-/*
- * Correct overflow not hidden in IE9 
- */
 
 svg:not(:root) { overflow: hidden; }
 
-
-/* =============================================================================
-   Figures
-   ========================================================================== */
-
 figure { margin: 0; }
-
-
-/* =============================================================================
-   Forms
-   ========================================================================== */
 
 form { margin: 0; }
 fieldset { border: 0; margin: 0; padding: 0; }
-
-/* Indicate that 'label' will shift focus to the associated form element */
 label { cursor: pointer; }
-
-/* 
- * 1. Correct color not inheriting in IE6/7/8/9 
- * 2. Correct alignment displayed oddly in IE6/7 
- */
-
-legend { border: 0; *margin-left: -7px; padding: 0; }
-
-/*
- * 1. Correct font-size not inheriting in all browsers
- * 2. Remove margins in FF3/4 S5 Chrome
- * 3. Define consistent vertical alignment display in all browsers
- */
-
+legend { border: 0; *margin-left: -7px; padding: 0; white-space: normal; }
 button, input, select, textarea { font-size: 100%; margin: 0; vertical-align: baseline; *vertical-align: middle; }
-
-/*
- * 1. Define line-height as normal to match FF3/4 (set using !important in the UA stylesheet)
- * 2. Correct inner spacing displayed oddly in IE6/7
- */
-
-button, input { line-height: normal; *overflow: visible; }
-
-/*
- * Reintroduce inner spacing in 'table' to avoid overlap and whitespace issues in IE6/7
- */
-
-table button, table input { *overflow: auto; }
-
-/*
- * 1. Display hand cursor for clickable form elements
- * 2. Allow styling of clickable form elements in iOS
- */
-
-button, input[type="button"], input[type="reset"], input[type="submit"] { cursor: pointer; -webkit-appearance: button; }
-
-/*
- * Consistent box sizing and appearance
- */
-
-input[type="checkbox"], input[type="radio"] { box-sizing: border-box; }
+button, input { line-height: normal; }
+button, input[type="button"], input[type="reset"], input[type="submit"] { cursor: pointer; -webkit-appearance: button; *overflow: visible; }
+button[disabled], input[disabled] { cursor: default; }
+input[type="checkbox"], input[type="radio"] { box-sizing: border-box; padding: 0; *width: 13px; *height: 13px; }
 input[type="search"] { -webkit-appearance: textfield; -moz-box-sizing: content-box; -webkit-box-sizing: content-box; box-sizing: content-box; }
-input[type="search"]::-webkit-search-decoration { -webkit-appearance: none; }
-
-/* 
- * Remove inner padding and border in FF3/4: h5bp.com/l 
- */
-
+input[type="search"]::-webkit-search-decoration, input[type="search"]::-webkit-search-cancel-button { -webkit-appearance: none; }
 button::-moz-focus-inner, input::-moz-focus-inner { border: 0; padding: 0; }
-
-/* 
- * 1. Remove default vertical scrollbar in IE6/7/8/9 
- * 2. Allow only vertical resizing
- */
-
 textarea { overflow: auto; vertical-align: top; resize: vertical; }
-
-/* Colors for form validity */
 input:valid, textarea:valid {  }
 input:invalid, textarea:invalid { background-color: #f0dddd; }
-
-/* =============================================================================
-   Tables
-   ========================================================================== */
 
 table { border-collapse: collapse; border-spacing: 0; }
 td { vertical-align: top; }
 
-/* =============================================================================
-   Primary styles
-   Author:
+.chromeframe { margin: 0.2em 0; background: #ccc; color: black; padding: 0.2em 0; }
+
+
+
+/* ===== Primary Styles ========================================================
+   Author: ohsogeoff.com
    ========================================================================== */
 
-  *:focus { outline: none; }
-  
-  body {
-    font-family: Verdana;
-    background: repeat url("../images/bg.png");
+
+   html, body {
+    font-family: "Calibri", "Arial", sans-serif;
+   }
+
+   header.navbar {
+    background: #fff;
+    border-bottom: 1px solid #ccc;
+    box-shadow: 3px 0 5px rgba(0,0,0,0.2);
+   }
+
+     #logo {
+      margin: 22px 0 26px;
+      width: 174px;
+      height: 54px;
+      float: left;
+      background: url("logo.png") no-repeat;
+     }
+
+     header.navbar ul, header.navbar ul li {
+      float: right;
+     }
+
+     header.navbar nav li{
+      border-left: 1px solid #ccc;
+     }
+      #about:hover {
+        border-left: 1px solid #b36464;
+      }
+
+      #about a{
+        color: #b36464;
+      }
+
+      #signin {
+        border-right: 1px solid #ccc;
+      }
+
+        #signin:hover {
+          border-left: 1px solid #649ab3;
+        }
+
+        #signin a{
+          color: #649ab3;
+        }
+
+     header.navbar nav a {
+      padding: 30px 20px;
+      display: block;
+      font-size: 1.1em;
+     }
+
+      header.navbar nav a:hover {
+        text-decoration: none;
+      }
+
+     header.navbar nav a span {
+      margin-top: 6px;
+      color: #ccc !important;
+      font-size: 0.9em;
+      display: block;
+     }
+
+     #social {
+      margin: 37px 0 0; padding: 0;
+      list-style: none;
+     }
+
+      #social li {
+        width: 100px;
+        overflow: hidden;
+      }
+
+
+  #main {
+    margin-top: 105px;
+    background: url("bg-pattern.png") repeat;
   }
-  
-  iframe {
-    width: 76px !important;
+
+  #main > div > section {
+    margin-top: 25px;
+    height: 700px;
+    border-bottom: 1px solid #fff;
+    box-shadow: 0 4px 6px -3px rgba(0,0,0,0.2);
   }
-  
-  #blackbar {
-    height: 116px;
-    background: rgba(0,0,0,0.05);
+
+    #more {
+      border: 0 !important;
+      box-shadow: none !important;
+    }
+
+    .popover-title { display: none; }
+    .popover a, .popover em { color: #d03a3a; }
+    .popover a { text-decoration: underline;}
+    .popover em { font-style: normal; }
+    .popover-inner {
+      background: #BEBEBE !important;
+      padding: 1px;
+      -webkit-box-shadow: none;
+      -moz-box-shadow: none;
+      box-shadow: none;
+    }
+    .popover.right .arrow { border-right: 5px solid #BEBEBE !important;}
+    .popover.bottom .arrow { border-bottom: 5px solid #BEBEBE !important;}
+
+  #main > div > section h2 {
+    margin: 30px 0 20px;
+    font-size: 4.5em;
+    font-weight: normal;
   }
-  
-  #container {
-    margin: -106px auto 0;
-    width: 739px;
+
+  #main > div > section h3 {
+    margin-bottom: 10px;
+    font-weight: normal;
+    font-size: 2em;
+    color: #707070;
+    line-height: 1.2;
   }
-  
-  header {
+
+  .dyk, #more .dyk li {
+    width: 480px;
+    background: #fff;
+    border: 1px solid #c9c9c9;
+    position: relative;
+    box-shadow: 2px 2px 6px -2px rgba(0,0,0,0.2);
+  }
+
+    .dyk i {
+      margin: -20px 0 0 -20px;
+      width: 140px;
+      height: 40px;
+      display: block;
+      position: absolute;
+      z-index: 999;
+      background: url("dyk.png") no-repeat;
+    }
+
+    .dyk > div {
+      padding: 10px;
+    }
+
+  .testimonial {
     margin-bottom: 15px;
   }
-  
-    #logo {
-      margin: 0; padding:0;
-      width: 207px;
-      height: 65px;
-      float: left;
-      background: no-repeat url("../images/logo.png");
+
+  #customers h2 {
+    margin-top: 10px !important;
+  }
+
+  #customers section {
+    margin-top: 60px;
+  }
+
+    #customers .dyk div .fl {
+      font-size: 1.8em;
+      margin-top: 20px;
     }
-    
-    #main_nav {
-      margin: 10px 0 0;
-      width: 202px;
+
+    #customers .dyk em {
+      color: #d03a3a;
+    }
+
+    #customers .dyk div > em {
+      font-size: 8em;
+      font-weight: bold;
+      font-style: normal;
+      display: block;
+      float: left;
+      line-height: 0.6;
+    }
+
+    #customers .dyk span {
+      margin: 16px 0 0 10px;
+      width: 233px;
+      display: block;
+      float: left;
+    }
+
+    #twitter.testimonial{
+      margin-top: 10px;
+      width: 598px;
+      height: 247px;
+      background: url("twitter-example.png") no-repeat;
+    }
+
+      .popover.bottom {
+        left: 223px !important;
+        text-align: center;
+      }
+
+    #customers #signup {
+      margin: 177px 0 0 20px;
+    }
+
+    #customers ul {
+      margin: 0; padding: 20px 80px 10px 20px;
+      list-style: none;
+      background: rgba(0,0,0,0.8);
+    }
+
+    #customers ul li {
+      margin-bottom: 10px;
+    }
+
+    #signup h4 {
+      margin-bottom: 25px;
+      color: #fff;
+      font-size: 1.5em;
+      font-weight: normal;
+    }
+
+    #customers #signup input[type=text],
+    #customers #signup input[type=email],
+    #customers #signup input[type=password]{
+      padding: 10px;
+      width: 100%;
+    }
+
+    #signup input[type=button]{
+      margin-top: 15px;
+      padding: 10px 30px;
+      -webkit-border-radius: 0;
+      -moz-border-radius: 0;
+      border-radius: 0;
+      border: 0;
+      background: #78bddd;
+      color: #fff;
+    }
+
+    .callout {
+      padding: 10px 30px;
+      background: #d03a3a;
+      color: #fff !important;
+      font-size: 1.3em;
+      display: block;
+      text-align: center;
+    }
+
+    #customers .callout {
       float: right;
     }
-    
-      #main_nav li {
-        margin: 0 0 10px 20px;
-        float: left;
-      }
-      
-      #main_nav li a {
-        height: 18px;
-        font-size: 0.8em;
-        font-weight: bold;
-        display: block;
-        background-image: url("../images/sprite.png");
-        background-repeat: no-repeat;
-        text-decoration: none;
-      }
-      
-      #main_nav li a.about { color: #4e8ae4; padding-left: 22px; background-position: 0 0; height: 17px; } 
-      #main_nav li a.contact { color: #e44e4e; padding-left: 26px; background-position: 0 -27px; height: 18px; } 
-      #main_nav li a.fb { color: #5775ae; padding-left: 21px; background-position: 0 -55px; height: 16px; } 
-      #main_nav li a.tt { color: #3986bb; padding-left: 21px; background-position: 0 -81px; height: 16px; } 
 
-  
-  #main {
-    padding: 20px;
-    background: #fff;
-    border: 1px solid #cbcbcb;
-    box-shadow: 0 0 5px 0 #cbcbcb;
-    position: relative;
-    
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
+  #listen {
+    height: 760px !important;
   }
-    
-    #main h1, #main h2 {
-      text-align: center;
-    }
-    
-    #main h1 {
-      margin: 0 0 127px;
-      font-weight: normal;
-      font-size: 2.5em;
-      color: #c30c30;
-      font-family: "ChaparralProRegular";
-    }
-    
-    #main h2 {
-      margin: 10px 0;
-      color: #fff;
-      font-size: 1.4em;
-    }
-    
-    form {
-      text-align: center;
-    }
-    
-      form input[type=text], form input[type=email] {
-        padding: 10px;
-        width: 269px;
-        border: 1px solid #ad3434;
-        background: #fff;
-        color: #a3a3a3;
-        box-shadow: 0 0 5px 0 rgba(0,0,0,0.3);
-        
-        -moz-border-radius: 3px;
-        border-radius: 3px;
-      }
-      
-      form input[type=text]:focus, form input[type=email]:focus
-      {
-        color: #333;
-      }
-      
-      form input[type=submit]{
-        padding: 9px 20px;
-        color: #fff;
-        font-weight: bold;
-        font-size: 1.2em;
-        background: #67c346;
-        border: 1px solid #4f9835;
-        box-shadow: inset 0 1px 0 0 rgba(255,255,255,0.5), 0 0 5px 0 rgba(0,0,0,0.3);
-        text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
-        
-        -moz-border-radius: 3px;
-        border-radius: 3px;
-      }
-    
-    #ribbon {
-      top: 85px;
-      left: -106px;
-      margin: 0 auto;
-      width: 946px;
-      height: 123px;
-      position: absolute;
-      background: no-repeat url("../images/ribbon.png");
-    }
-    
-    section {
-      padding: 10px 0;
-    }
-    
-    section#info{
-      border-bottom: 1px solid #d3d1d1;
-    }
-      
-      #sub_nav li{
-        float: left;
-        border-right: 1px solid #fff;
-      }
-        
-        #sub_nav li a{
-          background: #d3d1d1;
-        }
-        
-        #sub_nav li.active a{
-          background: #f1b764;
-        }
-        
-        #sub_nav li.active a {
-          color: #fff;
-        }
-        
-        #sub_nav li span {
-          height: 7px;
-          background: no-repeat url("../images/arrow.png") center;
-          display: none;
-        }
-        
-        #sub_nav li.active span {
-          display: block;
-        }
-      
-      #sub_nav li a {
-        padding: 8px;
-        color: #545454;
-        text-decoration: none;
-        display: block;
-      }
-      
-      section#info div{
-        padding: 0 0 10px;
-        line-height: 24px;
-        display: none;
-      }
-      
-      ol {
-        margin: 0;
-      }
-    
-    #steps {
-      margin-top: 23px;
-    }
-    
-    .col {
-      width: 27%;
+
+  #listen h3 {
+    margin-bottom: 50px !important;
+  }
+
+  #listen .feature {
+    margin-bottom: 50px;
+  }
+
+    #listen .feature span {
+      margin-left: 100px;
+      width: 300px;
+      background: #fff;
+      border: 1px solid #ccc;
+      padding: 10px;
+      display: block;
+      font-size: 1.3em;
       float: left;
     }
-    
-      .col h3 {
-        margin: 0;
+
+      #listen .feature span i {
+        margin: 10px 0 0 -10px;
+        width: 300px;
+        height: 16px;
+        display: block;
+        position: absolute;
+        background: url("lift-shadow.png") no-repeat;
       }
-    
-      .icon {
-        padding-left: 42px;
-      }
-      
-        .setup.icon{
-          background: no-repeat url("../images/setup.png") 0 0;
-        }
-        
-        .ask.icon{
-          background: no-repeat url("../images/ask.png") 0 0;
-        }
-        
-        .share.icon{
-          background: no-repeat url("../images/share.png") 0 0;
-        }
-  
-  #footer {
-    margin: 10px 0 0;
-    font-size: 0.8em;
-    text-align: center;
-  }
-  
-    #footer a {
-      color: #4e8ae4;
-      text-decoration: none;
+
+    #listen .feature div {
+      margin-left: 20px;
+      width: 550px;
+      height: 185px;
+      float: left;
+
+      -o-border-radius: 3px;
+      -ms-border-radius: 3px;
+      -moz-border-radius: 3px;
+      -webkit-border-radius: 3px;
+      border-radius: 3px;
+
+      border: 1px solid #fff;
+      box-shadow: 10px 10px 0 -1px rgba(0,0,0,0.1);
+      -moz-background-size: 574px 300px;
+      -webkit-background-size: 574px 300px;
+      background-size: 574px 300px;
+      background-repeat: no-repeat;
+    }
+
+    #listen #feedback {
+      background-image: url("feedback.jpg");
+    }
+
+    #listen #responses {
+      background-image: url("responses.jpg");
+    }
+
+    #listen .callout {
+      margin: 0 auto;
+      width: 200px;
     }
   
-  .show {
-    display: block;
-  }
-  
-  #thanks
-  {
-    width: 500px;
-    margin: 100px auto;
-    padding: 20px;
-    background: #fff;
-    border: 1px solid #cbcbcb;
-    box-shadow: 0 0 5px 0 #cbcbcb;
-    position: relative;
-    text-align: center;
-    
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-  }
-  
-  #thanks h1
-  {
-    font-weight: normal;
-    font-size: 2.5em;
-    color: #c30c30;
-    font-family: "ChaparralProRegular";
+  #more {
+    height: 625px !important;
   }
 
-@font-face {
-    font-family: 'ChaparralProRegular';
-    src: url('../fonts/chaparralpro-regular-webfont.eot');
-    src: url('../fonts/chaparralpro-regular-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/chaparralpro-regular-webfont.woff') format('woff'),
-         url('../fonts/chaparralpro-regular-webfont.ttf') format('truetype'),
-         url('../fonts/chaparralpro-regular-webfont.svg#') format('svg');
-    font-weight: normal;
-    font-style: normal;
+  #more h2 {
+    margin-bottom: 50px !important;
+  }
 
-}
+    #facebook.testimonial {
+      width: 632px;
+      height: 424px;
+      background: url("fb-example.png");
+    }
 
-.ie7 #main{
-  margin-top: 80px;
-}
+      .popover.right {
+        top: 1753.5px !important;
+      }
 
-.ie7 #sub_nav {
-  display: none;
-}
+      .popover.right ul{
+        margin: 0; padding: 0;
+        list-style: none;
+        font-size: 1.5em;
+      }
 
-.ie7 #main h1 {
-  margin-bottom: 150px;
-}
+      .popover.right li {
+        margin-bottom: 8px;
+      }
 
-.ie7 .content h3 {
-  margin-bottom: 0;
-}
+      .popover.right li:last-child {
+        margin-bottom: 0;
+      }
 
-.ie7 #steps {
-  margin-top: 30px;
-}
+    #more .row {
+      position: relative;
+    }
 
-/* ==|== non-semantic helper classes ========================================
-   Please define your styles before this section.
+    #more section {
+      bottom: -48px; right: 119px;
+    }
+
+    #more .dyk {
+      margin: 0; padding: 0;
+      list-style: none;
+      background: none;
+      border: 0;
+      box-shadow: none;
+    }
+
+      #more .dyk li {
+        margin-bottom: 5px;
+        z-index: 0;
+      }
+
+      #more .dyk li span {
+        margin-right: 10px;
+        padding: 34px 43px 34px 18px;
+        width: 21%;
+        font-size: 4em;
+        display: block;
+        float: left;
+        font-weight: bold;
+        color: #fff;
+        background: #3694bf;
+        text-shadow: 1px 1px 1px #000;
+      }
+
+      #more .dyk li p {
+        padding: 15px 11px 0;
+        font-size: 1.3em;
+        line-height: 1.3em;
+        color: #8a8a8a;
+      }
+
+  footer #signup {
+    background: #3694bf;
+  }
+
+    footer #signup ul {
+      margin: 0; padding: 0;
+      list-style: none;
+    }
+
+    footer #signup li{
+      padding: 10px 0;
+      float: left;
+      display: block;
+      margin-right: 10px;
+    }
+
+    footer #signup input {
+      padding: 10px;
+      width: 316px;
+    }
+
+    footer #signup a {
+      padding: 10px 20px;
+      float: left;
+      background: #000;
+      font-size: 1.8em;
+      color: #fff;
+      display: block;
+    }
+
+    #bits {
+      padding: 25px 0;
+    }
+
+    #bits nav li{
+      margin-right: 10px;
+      float: left;
+    }
+
+    #bits a {
+      color: #707070;
+    }
+
+    #copyright {
+      padding-left: 10px;
+      border-left: 1px solid #ccc;
+    }
+
+/* =============================================================================
+   Media Queries
    ========================================================================== */
 
-/* For image replacement */
-.ir { display: block; border: 0; text-indent: -999em; overflow: hidden; background-color: transparent; background-repeat: no-repeat; text-align: left; direction: ltr; }
+@media only screen and (min-width: 35em) {
+  /* Style adjustments for viewports that meet the condition */
+}
+
+/* =============================================================================
+   Non-Semantic Helper Classes
+   ========================================================================== */
+
+.ir { display: block; border: 0; text-indent: -999em; overflow: hidden; background-color: transparent; background-repeat: no-repeat; text-align: left; direction: ltr; *line-height: 0; }
 .ir br { display: none; }
-
-/* Hide from both screenreaders and browsers: h5bp.com/u */
 .hidden { display: none !important; visibility: hidden; }
-
-/* Hide only visually, but have it available for screenreaders: h5bp.com/v */
 .visuallyhidden { border: 0; clip: rect(0 0 0 0); height: 1px; margin: -1px; overflow: hidden; padding: 0; position: absolute; width: 1px; }
-
-/* Extends the .visuallyhidden class to allow the element to be focusable when navigated to via the keyboard: h5bp.com/p */
 .visuallyhidden.focusable:active, .visuallyhidden.focusable:focus { clip: auto; height: auto; margin: 0; overflow: visible; position: static; width: auto; }
-
-/* Hide visually and from screenreaders, but maintain layout */
 .invisible { visibility: hidden; }
-
-/* Contain floats: h5bp.com/q */ 
 .clearfix:before, .clearfix:after { content: ""; display: table; }
 .clearfix:after { clear: both; }
-.clearfix { zoom: 1; }
+.clearfix { *zoom: 1; }
+.fl { float: left; }
+.fr { float: right; }
+.abs { position: absolute; }
 
-.clear { clear: both; }
-
-/* ==|== media queries ======================================================
-   PLACEHOLDER Media Queries for Responsive Design.
-   These override the primary ('mobile first') styles
-   Modify as content requires.
-   ========================================================================== */
-
-@media only screen and (min-width: 480px) {
-  /* Style adjustments for viewports 480px and over go here */
-
-}
-
-@media only screen and (min-width: 768px) {
-  /* Style adjustments for viewports 768px and over go here */
-
-}
-
-
-
-/* ==|== print styles =======================================================
-   Print styles.
-   Inlined to avoid required HTTP connection: h5bp.com/r
+/* =============================================================================
+   Print Styles
    ========================================================================== */
  
 @media print {
-  * { background: transparent !important; color: black !important; text-shadow: none !important; filter:none !important; -ms-filter: none !important; } /* Black prints faster: h5bp.com/s */
+  * { background: transparent !important; color: black !important; box-shadow:none !important; text-shadow: none !important; filter:none !important; -ms-filter: none !important; } /* Black prints faster: h5bp.com/s */
   a, a:visited { text-decoration: underline; }
   a[href]:after { content: " (" attr(href) ")"; }
   abbr[title]:after { content: " (" attr(title) ")"; }
