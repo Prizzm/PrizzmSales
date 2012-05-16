@@ -101,22 +101,24 @@
 
 <footer>
 	<section id="signup">
+	
     <div class="container">
       <div class="row"><div class="span12">
-        <form>
+        <form id="signup" class="fl" method="post" action="http://prizzm.com/users" accept-charset="UTF-8">
           <ul class="clearfix">
-            <li><input type="text" name="company_name" placeholder="Company name"></li>
-            <li><input type="email" name="email" placeholder="email"></li>
-            <li><input type="password" name="password" placeholder="password"></li>
-            <a href="">Sign up</a>
+	        <li><input type="text" name="user[name]" maxlength="255" id="user_name" placeholder="Company name"></li>
+	        <li><input type="email" name="user[email]" maxlength="255" id="user_email" value="" placeholder="email"></li>
+	        <li><input type="password" name="user[password]" maxlength="128" id="user_password" placeholder="password"></li>
+           <!-- <a href="">Sign up</a>  -->
+            <li><input type="submit" value="Sign up">  </li>
           </ul>
+			
         </form>
 	    </div>
     </div>
     </div></section>
 
 	<section id="bits"><div class="container"><div class="row"><div class="span12">
-		<div id="author" class="fl">Design by <a href="http://ohsogeoff.com">ohsogeoff</a></div>
 		<div id="copyright" class="fr">Copyright &copy; 2012 Prizzm.com</div>
 		<nav class="fr"><ul>
 			<li><a href="">About</a></li>

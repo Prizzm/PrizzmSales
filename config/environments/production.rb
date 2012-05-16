@@ -57,4 +57,6 @@ Sales::Application.configure do
 
   # Send deprecation notices to registered listeners
   config.active_support.deprecation = :notify
+    
+  config.middleware.use("Rack::GoogleAnalytics", :web_property_id => "UA-28400285-1")   
 end
