@@ -101,18 +101,15 @@
 
 <footer>
 	<section id="signup">
-	
     <div class="container">
       <div class="row"><div class="span12">
         <form id="signup" class="fl" method="post" action="http://prizzm.com/users" accept-charset="UTF-8">
           <ul class="clearfix">
-	        <li><input type="text" name="user[name]" maxlength="255" id="user_name" placeholder="Company name"></li>
-	        <li><input type="email" name="user[email]" maxlength="255" id="user_email" value="" placeholder="email"></li>
-	        <li><input type="password" name="user[password]" maxlength="128" id="user_password" placeholder="password"></li>
-           <!-- <a href="">Sign up</a>  -->
-            <li><input type="submit" value="Sign up">  </li>
+            <li><input type="text" name="user[name]" maxlength="255" id="user_name" placeholder="Company name"></li>
+            <li><input type="email" name="user[email]" maxlength="255" id="user_email" value="" placeholder="email"></li>
+            <li><input type="password" name="user[password]" maxlength="128" id="user_password" placeholder="password"></li>
+            <%= link_to "Sign up", "#", :id => 'footer-signup' -%>
           </ul>
-			
         </form>
 	    </div>
     </div>
