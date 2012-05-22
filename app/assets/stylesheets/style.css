@@ -100,6 +100,10 @@ td { vertical-align: top; }
      header.navbar nav li{
       border-left: 1px solid #ccc;
      }
+      #about {
+        border-top: 1px solid #ccc;
+      }
+
       #about:hover {
         border-left: 1px solid #b36464;
       }
@@ -110,6 +114,7 @@ td { vertical-align: top; }
 
       #signin {
         border-right: 1px solid #ccc;
+        border-top: 1px solid #ccc;
       }
 
         #signin:hover {
@@ -149,7 +154,7 @@ td { vertical-align: top; }
 
 
   #main {
-    margin-top: 105px;
+    /*margin-top: 105px;*/
     background: url("bg-pattern.png") repeat;
   }
 

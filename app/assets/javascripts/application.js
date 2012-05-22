@@ -1,6 +1,6 @@
 //= require jquery
 //= require jquery_ujs
-//= require bootstrap.min
+//= require twitter/bootstrap
 //= require jquery.smooth-scroll.min
 //= require modernizr-2.5.3.min
 //= require script

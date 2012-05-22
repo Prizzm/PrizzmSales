@@ -1,20 +1,31 @@
 <header class="navbar navbar-fixed-top">
-  <div class="container">
-    <div class="row">
-      <div class="span12">
-	      <a href="/"><h1 id="logo" class="ir">Prizzm rewarding customers</h1></a>
+  <!--<div class="navbar-inner">-->
+    <div class="container">
+      <div class="row">
+        <!-- COLLAPSED MENU LINKS -->
+        <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </a>
 
-	      <nav>
-          <ul>
-            <li id="signin"><a href="http://www.prizzm.com/users/login">Sign in<span>with an existing account</span></a></li>
-            <li id="about"><a href="">About<span>our company</span></a></li>
-	        </ul>
-        </nav>
+        <div class="span12">
+          <a class="brand" href="/"><h1 id="logo" class="ir">Prizzm rewarding customers</h1></a>
 
-	      <ul id="social"> </ul>
+          <div style="height: 0px;" class="nav-collapse collapse">
+            <nav>
+              <ul>
+                <li id="signin"><a href="http://www.prizzm.com/users/login">Sign in<span>with an existing account</span></a></li>
+                <li id="about"><a href="">About<span>our company</span></a></li>
+              </ul>
+            </nav>
+
+            <ul id="social"> </ul>
+          </div>
+        </div>
       </div>
     </div>
-  </div>
+  <!--</div>-->
 </header>
 
 <div id="main"><div class="container">
@@ -46,17 +57,6 @@
         <li><input type="text" name="user[name]" maxlength="255" id="user_name" placeholder="Company name"></li>
         <li><input type="email" name="user[email]" maxlength="255" id="user_email" value="" placeholder="email"></li>
         <li><input type="password" name="user[password]" maxlength="128" id="user_password" placeholder="password"></li>
-
-        <!--<form id="user_new" class="simple_form user" action="/users" >
-          <div style="margin:0;padding:0;display:inline">
-            <input type="hidden" value="✓" name="utf8">
-            <input type="hidden" value="OVblVAlHf/t7VSM0kaAq4J1ubyoN6VLMvdrDdTzVVnQ=" name="authenticity_token">
-          </div>
-
-          <input type="text" size="50" required="required" name="user[name]" maxlength="255" id="user_name" class="string required">
-          <input type="email" value="" size="50" name="user[email]" maxlength="255" id="user_email" class="string email optional">
-          <input type="password" size="50" name="user[password]" maxlength="128" id="user_password" class="password optional">
-        -->
 		  </ul>
 		  <input type="submit" class="bbtn" value="Sign up">
 	  </form>

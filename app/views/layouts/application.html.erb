@@ -8,12 +8,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="description" content="Happy customers are the best advertisers">
     <meta name="author" content="ohsogeoff, prizzm">
-    <meta name="viewport" content="width=device-width">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <%= stylesheet_link_tag "application", :media => "all" -%>
     <%= javascript_include_tag "application" -%>
   </head>
 
-  <body>
+  <body class="glacier-page">
     <%= yield %>
 
     <%- if Rails.env.production? -%>
